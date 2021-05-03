@@ -19,7 +19,7 @@ from django.urls import path, include, re_path
 from workshop.views import AccueilView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('zebra/', admin.site.urls),
     re_path(r'^$', AccueilView.as_view(), name="accueil"),
      # importation of the urls from app workshop
     path('workshop/', include('workshop.urls')),

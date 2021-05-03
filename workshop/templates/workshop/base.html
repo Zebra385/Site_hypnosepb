@@ -13,6 +13,8 @@
         <!-- Font Awesome icons (free version)-->
         <!-- <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script> -->
         <!-- Google fonts -->
+        <!-- Bootstrap CSS File -->
+        <link href="{% static 'workshop/css/bootstrap.min.css' %}" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
         <!-- Third party plugin CSS-->
@@ -35,7 +37,7 @@
                             <li class="nav-item"><a class="nav-link js-scroll-trigger" href=" {% url 'accounts:logout' %}">Se déconnecter</a></li>
                              <li class="nav-item"><a class="nav-link js-scroll-trigger" href=" {% url 'members:pagemember' %}" id="mapage">Ma page</a></li>
                         {% else %}
-                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href=" {% url 'accounts:login' %}" title="Réserver aux adhérents">Se connecter</a></li>                        
+                            <!--li class="nav-item"><a class="nav-link js-scroll-trigger" href=" {% url 'accounts:login' %}" title="Réserver aux adhérents">Se connecter</a></li-->                        
                         {% endif%} 
                     </ul>
                 </div>
